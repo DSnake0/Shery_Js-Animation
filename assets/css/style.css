@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: system-ui;
     box-sizing: border-box;
 }
 
@@ -10,138 +9,143 @@ html,
 body {
     width: 100%;
     height: 100%;
+    overflow-y: hidden !important;
+}
+
+body {
+    font-family: system-ui;
 }
 
 #main {
     width: 100%;
     height: 100vh;
-}
 
-#back {
-    width: 100%;
-    height: 100vh;
-}
+    #back {
+        width: 100%;
+        height: 100vh;
 
-#back img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
-#top {
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-}
+    #top {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
 
-#workingarea {
-    position: relative;
-    margin: 0 auto;
-    width: 80%;
-    height: 100vh;
-    max-width: 1400px;
-}
+        #workingarea {
+            position: relative;
+            margin: 0 auto;
+            width: 80%;
+            height: 100vh;
+            max-width: 1400px;
 
-#nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px 0;
-}
+            #nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 20px 0;
 
-#navLeft,
-#navRight {
-    display: flex;
-    align-items: center;
-    gap: 60px
-}
+                #navLeft,
+                #navRight {
+                    display: flex;
+                    align-items: center;
+                    gap: 60px;
 
-#nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.96rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    pointer-events: all;
-}
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 0.80rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        pointer-events: all;
+                    }
+                }
+            }
 
-#hero {
-    position: absolute;
-    top: 58%;
-    left: 0;
-    transform: translate(0%, -50%);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
+            #hero {
+                position: absolute;
+                top: 63%;
+                left: 0;
+                transform: translate(0%, -50%);
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
 
-#heroLeft {
-    width: 50%;
-}
+                #heroLeft {
+                    width: 66%;
 
-#heroLeft .elem {
-    position: relative;
-    height: 26%;
-    overflow: hidden;
-}
+                    .elem {
+                        position: relative;
+                        height: 12%;
+                        overflow: hidden;
 
-#heroLeft .elem h1:nth-child(1) {
-    top: 0;
-}
+                        h1 {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            line-height: 0.98;
+                            font-family: system-ui !important;
+                            color: #fff;
+                            font-weight: 900;
+                            font-size: 3.1rem;
+                            text-transform: uppercase !important;
+                        }
+                    }
 
-#heroLeft .elem h1 {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    line-height: .82;
-    font-family: "kajiro" !important;
-    color: #fff;
-    font-weight: 100;
-    font-size: 10rem;
-}
+                    .elem h1:nth-child(1) {
+                        top: 0;
+                    }
 
-#heroLeft button {
-    padding: 5px 45px;
-    font-size: 3rem;
-    margin-top: 25px;
-    font-family: "kajiro" !important;
-    pointer-events: all;
-    cursor: pointer;
-}
+                    button {
+                        padding: 5px 40px;
+                        font-size: 1.3rem;
+                        font-weight: 900;
+                        margin-top: 50px;
+                        font-family: system-ui !important;
+                        pointer-events: all;
+                        cursor: pointer;
+                        text-transform: uppercase !important;
+                    }
+                }
 
-#heroRight {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 15.8%;
-    color: #fff;
-}
+                #heroRight {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    width: 15.8%;
+                    color: #fff;
 
-#heroRight p {
-    margin-bottom: 4px;
-    font-size: 0.80rem;
-    font-weight: 400;
-    text-align: right;
-}
+                    p {
+                        margin-bottom: 50px;
+                        font-size: 0.60rem;
+                        font-weight: 400;
+                        text-align: right;
+                    }
 
-#heroRight #imageDiv {
-    width: 100%;
-    height: 110px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    background: url(https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: center;
-}
+                    #imageDiv {
+                        width: 100%;
+                        height: 100px;
+                        margin-bottom: 30px;
+                        margin-top: 20px;
+                        background: url(https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                        background-size: cover;
+                        background-position: center;
+                    }
 
-#heroRight p:nth-child(3) {
-    margin-bottom: 70px;
-}
+                    #heroRight p:nth-child(3) {
+                        margin-bottom: 70px;
+                    }
 
-@media (max-width: 1400px){
-
+                }
+            }
+        }
+    }
 }
