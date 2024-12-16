@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Kajiro';
+    src: url('Kajiro.eot');
+    src: local('Kajiro'),
+        url('Kajiro.eot?#iefix') format('embedded-opentype'),
+        url('Kajiro.woff2') format('woff2'),
+        url('Kajiro.woff') format('woff'),
+        url('Kajiro.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
